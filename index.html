@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pipeline CI/CD | Isis</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e9ecef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 500px;
+            border-top: 8px solid #28a745; /* Barra verde de sucesso */
+        }
+        h1 { color: #333; margin-bottom: 10px; }
+        p { color: #666; line-height: 1.6; }
+        .status-box {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+        .status-label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+            color: #444;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🚀 Monitor de Pipeline</h1>
+        <p>Projeto de automação para o curso de Desenvolvimento de Software Multiplataforma - Fatec Matão.</p>
+
+        <div class="status-box">
+            <span class="status-label">Status da Integração:</span>
+            <img src="https://github.com/isisbia/teste-automatizado/actions/workflows/ci.yml/badge.svg" alt="Status do Pipeline">
+        </div>
+
+        <p>A cada <code>push</code> realizado, o GitHub Actions valida os testes de soma e subtração automaticamente.</p>
+
+        <footer>Desenvolvido por <strong>Isis</strong> | Fatec Matão</footer>
+    </div>
+
+</body>
+</html>
