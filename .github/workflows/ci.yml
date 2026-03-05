@@ -1,0 +1,21 @@
+name: Teste Automatizado Isis
+
+on: [push] 
+
+jobs:
+  verificacao:
+    runs-on: ubuntu-latest 
+    steps:
+      - name: Baixando o código
+        uses: actions/checkout@v4
+
+      - name: Instalando o Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Instalando as dependências
+        run: npm install
+        
+      - name: Rodando os testes
+        run: npm test
